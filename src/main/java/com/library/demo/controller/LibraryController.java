@@ -34,9 +34,11 @@ public class LibraryController {
     @GetMapping("/books")
     public List<String> getBooks() {
         List<String> titles = new ArrayList<>();
+
         for (Book b : bookList) {
             titles.add(b.getTitle());
         }
+
         return titles;
     }
 
